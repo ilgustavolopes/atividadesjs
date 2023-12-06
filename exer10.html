@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background-color: rgb(12, 113, 12);
+            border: 10px solid rgb(72, 60, 1);
+            gap:10px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-size:16px;
+            font-family: cursive;
+            color:white;
+        }
+        label{
+            display: flex;
+            gap:5px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        input{
+            background-color: yellow;
+            border:none;
+        }
+        button{
+            background-color: greenyellow;
+            border:none;
+            font-family: cursive;
+            width:50px;
+            height: 16px;
+        }
+        #bt2{
+            background-color: red;
+            border:none;
+            font-family: cursive;
+            width:50px;
+            height: 16px;
+        }
+        h1{
+            margin-top: 10px;
+        }
+        img{
+            height: 130px;
+            width: 230px;
+        }
+        #resurtado{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <img src="img/tabuadaaa.jpg">
+    <label>Aprenda:<input id="tabu" type="text"><button onclick="submit()"></button><button id="bt2" onclick="limpaTela()"></button></label>
+    <div id="resurtado"></div>
+    <script src="Js/script10.js"></script>
+</body>
+</html>

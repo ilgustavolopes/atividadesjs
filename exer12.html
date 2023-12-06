@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natação</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size:40px;
+            font-family: cursive;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            gap:10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(img/agua.avif);
+            background-size: cover;
+        }
+        label{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        #div{
+            background:rgba(116, 116, 216, 0.581);
+            width:500px;
+            height:500px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            gap:10px;
+            font-size:20px;
+            font-family: cursive;
+        }
+        input{
+            width:300px;
+            border-radius: 15px;
+            border:none;
+            height:30px;
+            font-size:20px;
+            font-family: cursive;
+            padding-left:10px;
+            padding-bottom:2px;
+        }
+        button{
+            width: 300px;
+            height:30px;
+            background-color: rgb(4, 4, 111);
+            border-radius: 15px;
+            border:none;
+            color:white;
+            font-size:20px;
+            font-family: cursive;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1>Natação</h1>
+        <label>
+            Nome: <input type="text" id="nome">
+            Idade: <input type="number" id="idade">
+            <button onclick="submit()">Categorizar Atleta</button>
+            <p id="nomeR"></p>
+            <p id="categoria"></p>
+        </label>
+    </div>
+    <script src="Js/script12.js"></script>
+</body>
+</html>

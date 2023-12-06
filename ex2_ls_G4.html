@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo descubra o número</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            font-family:cursive;
+            font-size:50px;
+        }
+        label{
+            font-size:30px;
+            font-family: cursive;
+            display:flex;
+            flex-direction: row;
+            gap:10px;
+            align-items: center;
+        }
+        input{
+            width:100px;
+            height:40px;
+            font-size: 30px;
+        }
+        button{
+            background-image: url("img/chute.jpg");
+            background-size: cover;
+            height:45px;
+            width:100px;
+            border: 2px solid blue;
+        }
+        #coment{
+            font-size:30px;
+            font-family: cursive;
+        }
+        #chances{
+            color:rgb(165, 111, 111);
+            font-size:30px;
+        }
+        div{
+            height:100%;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:10px;
+        }
+        label{
+            margin-top:10px;
+        }
+        #chances{
+            margin-top:-30px;
+        }
+        #coment{
+            margin-top:-8px;
+        }
+        img{
+            width:500px;
+        }
+        #bt2{
+            background: linear-gradient(90deg, blue, yellow );
+            height:45px;
+            width:100px;
+            border: 2px solid black;
+            font-size:14px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Descubra o número🎯🎮</h1>
+        <img src="img/download (1).jpg">
+        <label>Tente adivinhar o numero secreto:
+            <input type="text" id="tentativa">
+            <button id="bt" onclick="submit()"></button>
+            <button id="bt2" onclick="actionLS()"><b>tentativas</b></button>
+        </label>
+        <h2 id="coment"></h2>
+        <h2 id="chances"></h2>
+        <h2 id="tentativas"></h2>
+    </div>
+    <script src="Js/ex2_ls_G4.js"></script>
+</body>
+</html>

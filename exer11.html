@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Parcelas</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background-color: white;
+            display:flex;
+            gap:10px;
+            flex-direction: column;
+        }
+        h1{
+            color:black;
+            font-size:40px;
+        }
+        img{
+            height: 130px;
+            width: 130px;
+        }
+        label{
+            display: flex;
+            gap:5px;
+            flex-direction: row;
+            align-items: center;
+            color:black;
+            font-size:20px;
+            font-family:monospace;
+        }
+        #resultado{
+            color:black;
+            font-size:20px;
+            display: flex;
+            flex-direction: column;
+            font-family:monospace;
+        }
+        #container{
+            width:100vw;
+            height:140px;
+            background:yellow;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap:100px;
+            justify-content: space-evenly;
+        }
+        #pesquisa{
+            height:40px;
+            width:1000px;
+            border-radius: 15px;
+            padding:1px;
+        }
+        button{
+            background:yellow;
+            border: 1px solid black;
+            padding:1px;
+            font-family:monospace;
+        }
+        #caixa{
+            display:flex;
+            flex-direction: column;
+            gap:6px;
+            align-items: center;
+            justify-content: center;
+            width:60px;
+            height:60px;
+        }
+        #linha{
+            width:50px;
+            height:10px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="img/logo-mercado-livre-4096.png">
+        <input type="text" name="barra" id="pesquisa">
+        <div id="caixa">
+            <div id="linha"></div>
+            <div id="linha"></div>
+            <div id="linha"></div>
+        </div>
+    </div>
+    <label>Digite o valor do Produto: <input type="text" id="valor"><button onclick="submit()">Ver</button><button onclick="limpaTela()">Limpar</button></label>
+    <p id="resultado"></p>
+    <script src="Js/script11.js"></script>
+</body>
+</html>
